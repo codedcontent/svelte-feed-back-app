@@ -1,4 +1,7 @@
 <script>
+    // High order impoorts
+    import { v4 as uuidv4 } from 'uuid';
+
     // Stores
     import { FeedbackStore } from "../stores";
 
@@ -30,7 +33,7 @@
 
     const handleSubmit = () => {
         const newFeedback = {
-            id: 8,
+            id: uuidv4(),
             text,
             rating
         }
